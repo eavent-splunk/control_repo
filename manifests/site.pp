@@ -1,7 +1,6 @@
 node default {
-  file {'/root/README':
-    ensure  => file,
-    content => 'This is a readme',
-    owner   => 'root',
-  }
+}
+# This node name might need to be eaventlin03.sv.splunk.com...
+node 'master.puppet.vm' {
+  include role::master_server
 }
